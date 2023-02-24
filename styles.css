@@ -1,0 +1,220 @@
+body {
+    background-color: #1c1c1c;
+    color: #f2f2f2;
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: #2d2d2d;
+    border-radius: 10px;
+    margin: 50px auto;
+    max-width: 800px;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    margin: 0 0 10px;
+}
+
+h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 24px;
+    margin: 0 0 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 0 0 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #3d3d3d;
+}
+
+a {
+    color: #f2f2f2;
+}
+
+a:hover {
+    color: #ddd;
+}
+
+.fa {
+    margin-right: 10px;
+}
+.container > * {
+    opacity: 0;
+}
+
+.container > *:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.container > *:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.container > *:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.container > *:nth-child(4) {
+    animation-delay: 0.8s;
+}
+
+.container > *:nth-child(5) {
+    animation-delay: 1s;
+}
+
+.container > *:nth-child(6) {
+    animation-delay: 1.2s;
+}
+
+.container > *:nth-child(7) {
+    animation-delay: 1.4s;
+}
+
+.container > * {
+    opacity: 0;
+    animation: bounce-in 1s forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bounce-in {
+    0% {
+        opacity: 0;
+        transform: translateY(-500px);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(30px);
+    }
+    80% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+a {
+    color: #f2f2f2;
+    transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+    color: #ddd;
+    transform: translateY(-2px);
+    opacity: 1;
+}
+.bottom-row {
+    background-color: #2d2d2d;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.bottom-row button {
+    font-size: 18px;
+    color: #f2f2f2;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.bottom-row button:hover {
+    color: #ddd;
+}
+
+.bottom-row .home-btn {
+    font-size: 24px;
+}
+
+.bottom-row .game-btn {
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    background-color: #3d3d3d;
+}
+
+.bottom-row .game-btn:hover {
+    background-color: #444;
+}
+
+.bottom-row .social-btn {
+    font-size: 24px;
+}
+.bottom-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.bottom-box {
+    background-color: #2d2d2d;
+    border-radius: 10px;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.home-btn,
+.game-btn,
+.social-btn {
+    background-color: transparent;
+    border: none;
+    color: #f2f2f2;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.game-btn {
+    font-size: 30px;
+}
+
+.bottom-box:hover {
+    background-color: #3d3d3d;
+}
+
+.bottom-box:hover i {
+    color: #ddd;
+}
+
+.bottom-box i {
+    margin-right: 10px;
+    transition: all 0.2s ease-in-out;
+}
+
+.bottom-box:hover i {
+    transform: translateY(-2px);
+}
+.bottom-row {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-row button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    margin: 0 10px;
+    color: #f2f2f2;
+}
+
+.bottom-row button:hover {
+    color: #ddd;
+}
